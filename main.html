@@ -19,6 +19,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc; /* slate-50 */
+            color: #1f2937; /* gray-800 */
         }
         .modal-backdrop {
             backdrop-filter: blur(4px);
@@ -51,11 +52,11 @@
         }
         /* Hide scrollbar for modal content */
         #project-modal .overflow-y-auto {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
         #project-modal .overflow-y-auto::-webkit-scrollbar {
-            display: none; /* Chrome, Safari and Opera */
+            display: none;  /* Chrome, Safari and Opera */
         }
     </style>
 </head>
@@ -72,8 +73,8 @@
                     <i class="fas fa-download mr-2" aria-hidden="true"></i> Download
                 </a>
             </div>
-            <div class="flex-grow p-2">
-                <embed src="https://drive.google.com/file/d/1eNXtxPgpr_gGmvMUejwIXHv0Y7-oW6l_/preview" type="application/pdf" class="w-full h-full rounded-md" onerror="this.outerHTML='<div class=p-4>Failed to load PDF. Please ensure the file is shared publicly or the link is correct.</div>'">
+            <div class="flex-grow p-2 bg-gray-100">
+                <embed src="https://drive.google.com/file/d/1eNXtxPgpr_gGmvMUejwIXHv0Y7-oW6l_/preview" type="application/pdf" class="w-full h-full rounded-md" onerror="this.outerHTML='<div class=p-4>Failed to load PDF. Please check the share settings of the Google Drive link.</div>'">
             </div>
         </div>
     </div>
@@ -109,10 +110,10 @@
     </header>
 
     <main>
-        <section id="home" class="min-h-screen flex items-center bg-gray-100 py-20 md:py-0">
+        <section id="home" class="min-h-screen flex items-center bg-gray-100 py-20 md:py-0 pt-24">
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
                 <div class="w-full md:w-1/3 flex justify-center">
-                    <img src="profile.png" alt="Pravin Paradkar" class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/256x256/E2E8F0/4A5568?text=pp';">
+                    <img src="profile.png" alt="Pravin Paradkar" class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/256x256/E2E8F0/4A5568?text=PP';">
                 </div>
                 <div class="w-full md:w-2/3 text-center md:text-left">
                     <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-3">Pravin Paradkar</h1>
@@ -120,17 +121,31 @@
                         A Data Analyst with hands-on experience in SQL, Python, and Power BI. 
                         I transform complex data into actionable business insights through cleaning, analysis, and interactive dashboard creation.
                         <br><br>
-                
-                        Mobile No.: 9111317437<br>
-                        Email: pravindparadkar2003@gmail.com<br>
-                        Date of Birth: 15 April 2003
+                        Mobile No.: <b>9111317437</b><br>
+                        Email: <b>pravindparadkar2003@gmail.com</b><br>
+                        Date of Birth: <b>15 April 2003</b>
                     </p>
                     <div class="flex justify-center md:justify-start space-x-6 mb-8">
-                        <a href="https://linkedin.com/in/pravinparadkar" target="_blank" class="text-gray-500 hover:text-blue-700 transition-colors text-3xl transform hover:scale-110"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
-                        <a href="https://github.com/paradkarpravin15" target="_blank" class="text-gray-500 hover:text-gray-900 transition-colors text-3xl transform hover:scale-110"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
-                        <a href="mailto:pravindparadkar2003@gmail.com" class="text-gray-500 hover:text-red-500 transition-colors text-3xl transform hover:scale-110"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
-                        <a href="https://wa.me/919111317437" target="_blank" class="text-gray-500 hover:text-green-500 transition-colors text-3xl transform hover:scale-110"><i class="fab fa-whatsapp" aria-hidden="true"></i><span class="sr-only">WhatsApp</span></a>
-                        <a href="https://x.com/yourprofile" target="_blank" class="text-gray-500 hover:text-black transition-colors text-3xl transform hover:scale-110"><i class="fab fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X (formerly Twitter)</span></a>
+                        <a href="https://linkedin.com/in/pravinparadkar" target="_blank" class="text-gray-500 hover:text-blue-700 transition-colors text-3xl transform hover:scale-110">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/paradkarpravin15" target="_blank" class="text-gray-500 hover:text-gray-900 transition-colors text-3xl transform hover:scale-110">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a href="mailto:pravindparadkar2003@gmail.com" class="text-gray-500 hover:text-red-500 transition-colors text-3xl transform hover:scale-110">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span class="sr-only">Email</span>
+                        </a>
+                        <a href="https://wa.me/919111317437" target="_blank" class="text-gray-500 hover:text-green-500 transition-colors text-3xl transform hover:scale-110">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">WhatsApp</span>
+                        </a>
+                        <a href="https://x.com/pravinpardkar15" target="_blank" class="text-gray-500 hover:text-black transition-colors text-3xl transform hover:scale-110">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">X (formerly Twitter)</span>
+                        </a>
                     </div>
                     <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                         <button id="resume-button" class="w-full sm:w-auto bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 flex items-center justify-center">
@@ -203,7 +218,7 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden group">
-                        <img src="Certifications\Data_Science_Bootcamp.jpg" alt="OdinSchool Certificate" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="Certifications/Data_Science_Bootcamp.jpg" alt="OdinSchool Certificate" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-4"><h3 class="font-semibold text-lg">Data Science Bootcamp</h3><p class="text-gray-600">OdinSchool</p></div>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden group">
@@ -223,7 +238,7 @@
                         <div class="p-4"><h3 class="font-semibold text-lg">Excel Skills Job Simulation</h3><p class="text-gray-600">JPMorgan Chase & Co. (Forage)</p></div>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden group">
-                        <img src="Certifications/Google Sheet Bootcamp.jpg" alt="Google Sheets Certificate" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="Certifications/Google_Sheet_Bootcamp.jpg" alt="Google Sheets Certificate" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-4"><h3 class="font-semibold text-lg">Google Sheets Bootcamp</h3><p class="text-gray-600">Udemy</p></div>
                     </div>
                 </div>
@@ -237,7 +252,7 @@
                     <span id="project-count" class="text-3xl font-bold text-blue-600 ml-2"></span>
                 </div>
                 <div id="project-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                </div>
+                    </div>
             </div>
         </section>
     </main>
@@ -248,8 +263,8 @@
             <p class="text-gray-400 mb-6">Feel free to reach out for collaborations or just a friendly chat!</p>
             <div class="flex justify-center space-x-6 mb-8">
                 <a href="mailto:pravindparadkar2003@gmail.com" class="text-gray-400 hover:text-blue-500 transition-colors text-3xl"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
-                <a href="https://github.com/paradkarpravin15" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors text-3xl"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
-                <a href="https://linkedin.com/in/pravinparadkar" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors text-3xl"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                <a href="https://github.com/paradkarpravin15" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors text-3xl"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+                <a href="https://linkedin.com/in/pravinparadkar" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors text-3xl"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
             </div>
             <div class="text-gray-500 text-sm">
                 &copy; <span id="current-year"></span> Pravin Paradkar. All Rights Reserved.
@@ -260,20 +275,20 @@
     <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-        // --- Centralized Project Data ---
+        // =================================================================
+        // == PROJECT DATA (Single Source of Truth)
+        // =================================================================
         const projects = [
             {
                 id: 'amazon-sales',
                 title: 'Amazon Sales Analysis',
                 thumbnail: 'thumbnail2.png',
                 category: 'SQL Project',
-                description: 'A deep dive into sales data to uncover branch-specific trends and customer behavior.',
+                description: 'A deep dive into sales data using SQL to uncover branch-specific trends and customer behavior.',
                 githubLink: 'https://github.com/paradkarpravin15/Amazon-Sales-Analysis',
                 liveLink: '#',
-                images: [
-                    'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=2070&auto=format&fit=crop'
-                ],
+                images: [ 'ASA/page1.jpg', 'ASA/page2.jpg', 'ASA/page3.jpg', 'ASA/page4.jpg', 'ASA/page5.jpg', 'ASA/page6.jpg', 'ASA/page7.jpg', 
+                'ASA/page8.jpg', 'ASA/page9.jpg', 'ASA/page10.jpg', 'ASA/page11.jpg', 'ASA/page12.jpg', 'ASA/page13.jpg', 'ASA/page14.jpg', 'ASA/page15.jpg', 'ASA/page16.jpg', 'ASA/page17.jpg', 'ASA/page18.jpg', 'ASA/page19.jpg', 'ASA/page20.jpg', 'ASA/page21.jpg', 'ASA/page22.jpg', 'ASA/page23.jpg' ],
                 tech: [
                     { name: 'MySQL', logo: 'https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg' },
                     { name: 'SQL', logo: 'https://icon.icepanel.io/Technology/svg/Azure-SQL-Database.svg' }
@@ -281,7 +296,7 @@
                 details: {
                     challenge: 'To analyze sales data from three diverse Amazon branches and extract actionable insights to boost performance for each city.',
                     my_task: 'I performed feature engineering to add time-based columns, conducted an in-depth exploratory data analysis using SQL queries to identify trends, and created a final report summarizing key findings.',
-                    outcome: 'Discovered that the Health & Beauty category was the top performer across all branches. Identified that the Naypyitaw branch had 35% higher sales than the average, suggesting successful local strategies that could be replicated.'
+                    outcome: 'Discovered that the "Health & Beauty" category was the top performer across all branches. Identified that the Naypyitaw branch had 35% higher sales than the average, suggesting successful local strategies that could be replicated.'
                 }
             },
             {
@@ -291,13 +306,10 @@
                 category: 'Power BI Project',
                 description: 'An interactive Power BI dashboard to visualize cafe sales and drive business decisions.',
                 githubLink: 'https://github.com/paradkarpravin15/Cafe-Sales-Dashboard',
-                liveLink: '#', // Replace with your actual Power BI link if available
-                images: [
-                    'https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1935&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887&auto=format&fit=crop'
-                ],
+                liveLink: '#',
+                images: [ 'CSA/page1.png', 'CSA/page2.png', 'CSA/page3.png', 'CSA/page4.png', 'CSA/page5.png' ],
                 tech: [
-                    { name: 'Power BI', logo: 'https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg' },
+                    { name: 'Power BI', logo: 'https://img.icons8.com/?size=96&id=3sGOUDo9nJ4k&format=png' },
                     { name: 'Power Query', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fPqSTvKj7zc6MFqBKxZaKLow_ys7PhODGw&s' }
                 ],
                 details: {
@@ -314,10 +326,10 @@
                 description: 'A machine learning model to predict health insurance costs based on user attributes.',
                 githubLink: 'https://github.com/paradkarpravin15/Health-Insurance-Price-Prediction',
                 liveLink: '#',
-                images: [
-                    'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1932&auto=format&fit=crop',
-                    'https://plus.unsplash.com/premium_photo-1661627913337-35d21a78881f?q=80&w=2070&auto=format&fit=crop'
-                ],
+                images: [ 'health/page1.jpg', 'health/page2.jpg', 'health/page3.jpg', 'health/page4.jpg', 'health/page5.jpg', 'health/page6.jpg', 'health/page7.jpg', 'health/page8.jpg', 'health/page9.jpg', 'health/page10.jpg', 'health/page11.jpg', 'health/page12.jpg',
+                'health/page13.jpg', 'health/page14.jpg', 'health/page15.jpg', 'health/page16.jpg', 'health/page17.jpg', 'health/page18.jpg', 'health/page19.jpg', 'health/page20.jpg', 'health/page21.jpg', 'health/page22.jpg',
+                'health/page23.jpg', 'health/page24.jpg', 'health/page25.jpg', 'health/page26.jpg', 'health/page27.jpg', 'health/page28.jpg', 'health/page29.jpg', 'health/page30.jpg'
+                 ],
                 tech: [
                     { name: 'Python', logo: 'https://www.vectorlogo.zone/logos/python/python-icon.svg' },
                     { name: 'Scikit-learn', logo: 'https://images.seeklogo.com/logo-png/33/1/scikit-learn-logo-png_seeklogo-337685.png' },
@@ -329,10 +341,31 @@
                     my_task: 'I preprocessed the dataset by encoding categorical variables and handling outliers. I then trained and evaluated several regression models, including Linear Regression, Decision Tree, and Random Forest, comparing their performance to select the best one.',
                     outcome: 'The final Random Forest model achieved a high R² score of 89%, indicating strong predictive accuracy. The analysis also confirmed that smoking status and BMI are the most significant factors in determining insurance costs, providing clear insights for risk assessment.'
                 }
+            },
+            {
+                id: 'fnp-dashboard',
+                title: 'Ferns N Petals Sales Dashboard',
+                thumbnail: 'thumbnail1.png',
+                category: 'Excel Project',
+                description: 'A dynamic Excel dashboard to track and analyze sales performance for Ferns N Petals.',
+                githubLink: 'https://github.com/paradkarpravin15/Ferns_N_Petals_Analysis_Excel_Dashboard',
+                liveLink: '#',
+                images: [ 'FNP/Dashboard_Sscreenshot.png' ],
+                tech: [
+                    { name: 'Excel', logo: 'https://images.seeklogo.com/logo-png/37/1/microsoft-excel-logo-png_seeklogo-370278.png' },
+                    { name: 'Power Query', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fPqSTvKj7zc6MFqBKxZaKLow_ys7PhODGw&s' }
+                ],
+                details: {
+                    challenge: 'To analyze vast Ferns N Petals sales data to understand performance across different cities and product categories without using complex database tools.',
+                    my_task: 'I utilized Excel Power Query for efficient data cleaning and transformation. I then constructed a comprehensive dashboard with pivot tables, dynamic charts, and interactive slicers to visualize key metrics.',
+                    outcome: 'The dashboard clearly identified Delhi and Mumbai as top-performing cities and revealed Cakes and Flowers as the highest-selling categories. These insights enabled targeted marketing strategies and improved inventory management.'
+                }
             }
         ];
 
-        // --- DOM Elements ---
+        // =================================================================
+        // == DOM ELEMENTS
+        // =================================================================
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenuItems = document.getElementById('mobile-menu-items');
         const desktopNav = document.getElementById('desktop-nav');
@@ -348,40 +381,9 @@
         const projectCountEl = document.getElementById('project-count');
         const currentYearEl = document.getElementById('current-year');
 
-        // --- App Initialization ---
-        const init = () => {
-            setupEventListeners();
-            populateMobileNav();
-            renderProjectCards();
-            updateProjectCount();
-            updateCopyrightYear();
-            observeSections();
-        };
-
-        // --- Event Listeners Setup ---
-        const setupEventListeners = () => {
-            mobileMenuButton.addEventListener('click', toggleMobileMenu);
-            resumeButton.addEventListener('click', () => openModal(resumeModal));
-            closeResumeModalButton.addEventListener('click', () => closeModal(resumeModal));
-            closeProjectModalButton.addEventListener('click', () => closeModal(projectModal));
-            
-            // Event delegation for project cards
-            projectCardsContainer.addEventListener('click', handleProjectCardClick);
-
-            // Close modals with Escape key or by clicking backdrop
-            window.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeModal(resumeModal);
-                    closeModal(projectModal);
-                }
-            });
-
-            [resumeModal, projectModal].forEach(modal => {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) closeModal(modal);
-                });
-            });
-        };
+        // =================================================================
+        // == FUNCTIONS
+        // =================================================================
 
         // --- Navigation ---
         const toggleMobileMenu = () => {
@@ -391,12 +393,11 @@
         };
 
         const populateMobileNav = () => {
-            const navLinks = desktopNav.innerHTML;
-            mobileMenuItems.innerHTML = navLinks;
+            mobileMenuItems.innerHTML = desktopNav.innerHTML;
             mobileMenuItems.querySelectorAll('a').forEach(link => {
                 link.classList.add('block', 'py-3', 'px-6', 'hover:bg-gray-50');
-                link.classList.remove('text-gray-600');
-                link.addEventListener('click', toggleMobileMenu);
+                link.classList.remove('text-gray-600'); // Clean up desktop styles
+                link.addEventListener('click', toggleMobileMenu); // Close menu on click
             });
         };
 
@@ -404,8 +405,9 @@
         const openModal = (modal) => modal.classList.remove('hidden');
         const closeModal = (modal) => modal.classList.add('hidden');
         
-        // --- Project Rendering & Handling ---
+        // --- Project Rendering ---
         const renderProjectCards = () => {
+            if (!projectCardsContainer) return;
             projectCardsContainer.innerHTML = projects.map((project, index) => {
                 const techHtml = project.tech.map(tech => `
                     <div class="flex items-center bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700">
@@ -435,19 +437,7 @@
             }).join('');
         };
 
-        const handleProjectCardClick = (e) => {
-            const card = e.target.closest('.project-card');
-            if (!card) return;
-            
-            const projectId = card.dataset.projectId;
-            const project = projects.find(p => p.id === projectId);
-            if (project) {
-                populateAndShowProjectModal(project);
-            }
-        };
-
         const populateAndShowProjectModal = (project) => {
-            let currentImageIndex = 0;
             const techHtml = project.tech.map(t => `
                 <div class="flex items-center bg-gray-100 rounded-md p-2">
                     <img src="${t.logo}" alt="${t.name}" class="h-6 w-6 mr-2 object-contain">
@@ -468,14 +458,16 @@
                         <h2 id="project-modal-title" class="text-4xl font-bold mb-4">${project.title}</h2>
                         <div class="flex flex-wrap gap-3 mb-6">${techHtml}</div>
                         <div class="flex items-center space-x-4">
-                            <a href="${project.githubLink}" target="_blank" class="bg-gray-800 text-white font-semibold py-2 px-5 rounded-lg hover:bg-gray-900 transition-colors flex items-center"><i class="fab fa-github mr-2"></i> GitHub</a>
-                            ${project.liveLink && project.liveLink !== '#' ? `<a href="${project.liveLink}" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors flex items-center"><i class="fas fa-external-link-alt mr-2"></i> Live Demo</a>` : ''}
+                            <a href="${project.githubLink}" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white font-semibold py-2 px-5 rounded-lg hover:bg-gray-900 transition-colors flex items-center"><i class="fab fa-github mr-2"></i> GitHub</a>
+                            ${project.liveLink && project.liveLink !== '#' ? `<a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors flex items-center"><i class="fas fa-external-link-alt mr-2"></i> Live Demo</a>` : ''}
                         </div>
                     </div>
                     <div class="relative w-full h-80 rounded-lg shadow-xl overflow-hidden">
                         <img id="carousel-image" src="${project.images[0]}" class="w-full h-full object-cover transition-opacity duration-300">
+                        ${project.images.length > 1 ? `
                         <button id="prev-btn" aria-label="Previous image" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/75 transition-colors"><i class="fas fa-chevron-left"></i></button>
                         <button id="next-btn" aria-label="Next image" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/75 transition-colors"><i class="fas fa-chevron-right"></i></button>
+                        ` : ''}
                     </div>
                 </div>
                 <div>
@@ -484,7 +476,16 @@
                 </div>
             `;
             
-            // Carousel logic
+            if (project.images.length > 1) {
+                initializeCarousel(project);
+            }
+            
+            openModal(projectModal);
+            projectModal.querySelector('.overflow-y-auto').scrollTop = 0; // Scroll to top
+        };
+
+        const initializeCarousel = (project) => {
+            let currentImageIndex = 0;
             const carouselImage = document.getElementById('carousel-image');
             const prevBtn = document.getElementById('prev-btn');
             const nextBtn = document.getElementById('next-btn');
@@ -506,9 +507,6 @@
                 currentImageIndex = (currentImageIndex + 1) % project.images.length;
                 updateImage();
             });
-            
-            openModal(projectModal);
-            projectModal.querySelector('.overflow-y-auto').scrollTop = 0;
         };
 
         const updateProjectCount = () => {
@@ -535,8 +533,51 @@
             }, { rootMargin: '0px', threshold: 0.1 });
             sections.forEach(section => observer.observe(section));
         };
+        
+        // --- Event Listener Setup ---
+        const setupEventListeners = () => {
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+            resumeButton.addEventListener('click', () => openModal(resumeModal));
+            closeResumeModalButton.addEventListener('click', () => closeModal(resumeModal));
+            closeProjectModalButton.addEventListener('click', () => closeModal(projectModal));
+            
+            projectCardsContainer.addEventListener('click', (e) => {
+                const card = e.target.closest('.project-card');
+                if (!card) return;
+                
+                const projectId = card.dataset.projectId;
+                const project = projects.find(p => p.id === projectId);
+                if (project) {
+                    populateAndShowProjectModal(project);
+                }
+            });
 
-        // --- Start the application ---
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal(resumeModal);
+                    closeModal(projectModal);
+                }
+            });
+
+            [resumeModal, projectModal].forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closeModal(modal);
+                });
+            });
+        };
+
+        // =================================================================
+        // == INITIALIZATION
+        // =================================================================
+        const init = () => {
+            setupEventListeners();
+            populateMobileNav();
+            renderProjectCards();
+            updateProjectCount();
+            updateCopyrightYear();
+            observeSections();
+        };
+
         init();
     });
     </script>
